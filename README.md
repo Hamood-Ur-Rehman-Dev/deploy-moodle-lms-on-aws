@@ -24,21 +24,25 @@
     *   Next we need MySQL for that create file 
         *   *``vi /etc/yum.repos.d/mysql-community.repo``* 
         *   and write these lines in it file
-            *   *``[mysql57-community]``*
-            *   *``name=MySQL 5.7 Community Server``*
-            *   *``baseurl=http://repo.mysql.com/yum/mysql-5.7-community/el/7/$basearch/``*
-            *   *``enabled=1``*
-            *   *``gpgcheck=0``*
-            *   *``[mysql-connectors-community]``*
-            *   *``name=MySQL Connectors Community``*
-            *   *``baseurl=http://repo.mysql.com/yum/mysql-connectors-community/el/7/$basearch/``*
-            *   *``enabled=1``*
-            *   *``gpgcheck=0``*
-            *   *``[mysql-tools-community]``*
-            *   *``name=MySQL Tools Community``*
-            *   *``baseurl=http://repo.mysql.com/yum/mysql-tools-community/el/7/$basearch/``*
-            *   *``enabled=1``*
-            *   *``gpgcheck=0``*
+            <code>
+                <pre>
+                *``[mysql57-community]``*
+                *``name=MySQL 5.7 Community Server``*
+                *``baseurl=http://repo.mysql.com/yum/mysql-5.7-community/el/7/$basearch/``*
+                *``enabled=1``*
+                *``gpgcheck=0``*
+                *``[mysql-connectors-community]``*
+                *``name=MySQL Connectors Community``*
+                *``baseurl=http://repo.mysql.com/yum/mysql-connectors-community/el/7/$basearch/``*
+                *``enabled=1``*
+                *``gpgcheck=0``*
+                *``[mysql-tools-community]``*
+                *``name=MySQL Tools Community``*
+                *``baseurl=http://repo.mysql.com/yum/mysql-tools-community/el/7/$basearch/``*
+                *``enabled=1``*
+                *``gpgcheck=0``*
+                </pre>
+            </code>   
         *  Ref: https://computingforgeeks.com/install-mysql-5-7-on-centos-rhel-linux/
         *  Install **mysql** & **mysql-server**, **start mysql services** and **check mysql status** 
            *  *``yum install mysql mysql-server -y``*
@@ -93,12 +97,16 @@
   * Set **Guest Login Button HIDE**
   
 * **Php.ini** Settings
-  * **upload_max_size = 128M**
-  * **post_max_size = 128M**
-  * **memory_limit = 384M**
-  * **max_input_time = 600**
-  * **max_execution_time = 300**
-  * **max_input_var = 5000**
+  <code>
+      <pre>
+          *``upload_max_size = 128M``*
+          *``post_max_size = 128M``*
+          *``memory_limit = 384M``*
+          *``max_input_time = 600``*
+          *``max_execution_time = 300``*
+          *``max_input_var = 5000``*
+      </pre>
+  </code>
   
 * Custom CSS for Dashboard Settings
   * Site **Administration** >> **Appearance** >>**[YOUR_SELECTED_THEME_NAME]** >> **Advance Settings**
